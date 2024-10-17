@@ -1,0 +1,85 @@
+/* Header fijo en la parte superior */
+header {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 10px 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Siempre visible por encima de otros elementos */
+}
+
+/* Tamaño del logo dentro del header */
+header img {
+    height: 60px; /* Ajusta la altura del logo */
+    width: auto; /* Mantiene la proporción */
+}
+
+/* Contenedor del logo y la información */
+header .container {
+    display: flex;
+    justify-content: space-between; /* Asegura que los elementos estén distribuidos */
+    align-items: center;
+    flex-wrap: nowrap; /* Evita que los elementos se muevan a otra línea */
+    gap: 20px; /* Añade espacio entre los elementos */
+}
+
+/* Personalizar el fondo del dropdown */
+.navbar-dark .navbar-nav .dropdown-menu {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Cambiar el color del texto en los elementos del dropdown */
+.navbar-dark .navbar-nav .dropdown-item {
+    color: #fff;
+}
+
+.navbar-dark .navbar-nav .dropdown-item:hover {
+    background-color: #FFC107; /* Color dorado */
+    color: #000; /* Texto negro */
+}
+
+/* Personalizar el color del botón de menú hamburguesa */
+.navbar-dark .navbar-toggler {
+    border-color: #FFC107; /* Color dorado */
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=UTF8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba(255,193,7, 1)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+}
+
+/* Ajustes del menú de navegación */
+.navbar-nav {
+    margin-left: auto;
+}
+
+/* Información del clima */
+.d-flex.align-items-center.mt-3 {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.d-flex.align-items-center.mt-3 img {
+    height: 40px;
+}
+
+.d-flex.align-items-center.mt-3 .ms-3 {
+    margin-left: 15px;
+}
+
+.text-warning {
+    font-size: 0.8rem;
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+    header img {
+        height: 30px;
+    }
+
+    .text-warning {
+        font-size: 0.7rem;
+    }
+}
